@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script>
+        function setUsername(){
+            document.getElementById("username-p").innerHTML = document.getElementById("username").value + "'s Gallery";
+        }
+
+        function setProfileImage(){
+            document.getElementById("profileImage").style.backgroundImage = "url(" + document.getElementById("profileimg").value + ")";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="avatar">
+            <div class="profile-img" id="profileImage">
+            </div>
+            <div class="noti">6</div>
+        </div>
+        <div class="username">
+            <a href="https://www.youtube.com/watch?v=vx4kLgnFexo" class="on-hover">
+            <p style="font-size: x-large; font-weight: 600;" id="username-p">Pattarathida's Gallery</p>
+            </a>
+        </div>
+        <div class="input-group">
+            <div><label>Username</label><input style="margin-left: 10px;" type="text" id="username"><button id="setUsername" onclick="setUsername()" style="margin: 10px;">Apply</button></div>
+            <div><label>Profile Image</label><input style="margin-left: 10px;" type="text" id="profileimg"><button id="setProfile" onclick="setProfileImage()" style="margin: 10px;">Apply</button></div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-item col-span"></div>
+            <div class="gallery-item" style="background-image: url('https://i.pinimg.com/originals/04/54/57/045457cb890b54da8a256adcd2f3f0c2.jpg'); background-size: cover;"></div>
+            <div class="gallery-item" style="background-image: url('https://pbs.twimg.com/media/EBQAbllXsAAZNNQ?format=jpg&name=900x900'); background-size: cover;"></div>
+            <div class="gallery-item" style="background-image: url('https://i.redd.it/0l0h0m6rjcaa1.jpg'); background-size: cover;"></div>
+            <div class="gallery-item" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZXPYPqfA3saCAvtdvID8KfrpSQEKB1_uhgRRu40UxI0B16RNv7JF2MMMzuMtmtjEqr8o&usqp=CAU'); background-size: cover;"></div>
+            <div class="gallery-item row-span"></div>
+            <div class="gallery-item" style="background-image: url('https://64.media.tumblr.com/041fe663d0ab2a6c05b8ed30325764a9/b58ab091cd348ed7-7a/s640x960/b579feed8fec7919eb1e69ba8a2e3841a85e5d4c.jpg'); background-size: cover;"></div>
+            <div class="gallery-item" style="background-image: url('https://i.pinimg.com/originals/04/54/57/045457cb890b54da8a256adcd2f3f0c2.jpg'); background-size: cover;"></div>
+            <div class="gallery-item" style="background-image: url('https://i.pinimg.com/originals/04/54/57/045457cb890b54da8a256adcd2f3f0c2.jpg'); background-size: cover;"></div>
+            <div class="gallery-item" style="background-image: url('https://i.pinimg.com/originals/04/54/57/045457cb890b54da8a256adcd2f3f0c2.jpg'); background-size: cover;"></div>
+        </div>
+    </div>
+</body>
+
+</html>
